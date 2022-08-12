@@ -25,6 +25,20 @@ body{
     min-width: 320px;
     color: #000;
 }
+
+$primaryTextColor: #ed1651;
+
+@mixin title {
+    font-size: 32px;
+    line-height: 1.55;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 90px;
+    span {
+        color: $primaryTextColor;
+    }
+}
+
 //Header
 .header {
     background-image: url(../../assets/img/__22481180_px_30.webp);
@@ -94,14 +108,7 @@ body{
 }
 //Prizes
 .prizes__title {
-    font-size: 32px;
-    line-height: 1.55;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 90px;
-    span {
-        color: #ed1651;
-    }
+    @include title()
  }
 .prizes__box {
     position: relative;
@@ -174,5 +181,70 @@ body{
     margin: 0;
     span{
         font-weight: 400;
+    }
+}
+//
+.winPrize {
+    margin-top: 100px;
+}
+.winPrize__title {
+    font-size: 42px !important;
+    @include title();
+}
+.winPrize__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.winPrize__inner {
+    display: flex;
+    gap: 0px;
+}
+.winPrize__img,
+.winPrize__img2,
+.winPrize__img3 {
+    background-image: url(../../assets/img/1.webp);
+    background-repeat: no-repeat;
+    padding: 0 55px;
+    height: 119px;
+}
+.winPrize__img2 {
+    background-image: url(../../assets/img/2_1.webp);
+    background-repeat: no-repeat;
+}
+.winPrize__img3 {
+    background-image: url(../../assets/img/3_1.webp);
+    background-repeat: no-repeat;
+}
+.winPrize__item {
+    padding-top: 20px;
+}
+.winPrize__name {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+.winPrize__btn {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Montserrat',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 600;
+    border-width: 1px;
+    border-radius: 8px;
+    background-color: #7ec500;
+    background-position: center center;
+    border-color: #7ec500;
+    border-style: solid;
+    width: 209px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    transform: translateX(-10px);
+    &:hover {
+        background-color: #639905;
+        color: #fff;
     }
 }
