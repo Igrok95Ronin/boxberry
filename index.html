@@ -1,4 +1,4 @@
-<?php
+<p??php
 $site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
@@ -119,6 +119,98 @@ $title = $text . ' ' . $city;
                 </div>
             </div>
         </section>
+        <section class="aboutTheDraw">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 container">
+                        <h2 class="aboutTheDraw__title">Самое важное о <span>розыгрыше</span></h2>
+                        <div class="aboutTheDraw__box">
+
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        <p class="aboutTheDraw__accordion-name">Кто получит приз?</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                      <p class="aboutTheDraw__accordion-text"><strong>Мы дарим призы и отправителю, и получателю посылки.</strong> Например, Сергей отправил Кате посылку и зарегистрировал номер своего телефона на сайте. Случайным образом мы выбрали номер телефон Сергея, и он выиграл iPhone. Значит, каждому мы отправим по смартфону и Кате, и Серёже.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        <p class="aboutTheDraw__accordion-name">Как участвовать?</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                      <p class="aboutTheDraw__accordion-text"><strong>Отправьте посылку с 22 ноября 2021 года по 16 января 2022 года и укажи свой номер телефона на этом сайте. </strong> Получатель может быть в любом регионе России и в странах СНГ (Казахстан, Беларусь, Киргизия, Армения).</p>
+                                      <p class="aboutTheDraw__accordion-text">Отправления, сформированные на площадках объявлений (Авито, Юла, Ярмарка Мастеров, Вконтакте и т.д), не участвуют в розыгрыше.</p>
+                                      <p class="aboutTheDraw__accordion-text">Номер телефона, зарегистрированный на сайте, должен совпадать с номером, указанным при отправке посылки.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        <p class="aboutTheDraw__accordion-name">Как отправить посылку?</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <p class="aboutTheDraw__accordion-text">Есть два способа:</p> 
+                                        <p class="aboutTheDraw__accordion-text">1. Оформить документы на сайте или в мобильном приложении Boxberry, прийти в отделение с посылкой и назвать там номер накладной.</p> 
+                                        <p class="aboutTheDraw__accordion-text">2. Сразу прийти в отделение с посылкой, а всё необходимое оформит оператор.</p> 
+                                        <p class="aboutTheDraw__accordion-text">Не забудьте взять с собой паспорт!</p> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                        <p class="aboutTheDraw__accordion-name">Как узнать о победе?</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        <p class="aboutTheDraw__accordion-text">Итоги мы опубликуем 18 января на этом сайте. Если вы окажетесь победителем, то мы свяжемся с вами, чтобы узнать, по какому адресу можно отправить приз.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                        <p class="aboutTheDraw__accordion-name">А бонусы есть?</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                        <p class="aboutTheDraw__accordion-text">После того, как вы зарегистрируете свой номер телефона, вы получите SMS c промокодом на скидку для отправки следующей посылки.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                        <p class="aboutTheDraw__accordion-name">Важные моменты</p>
+                                    </button>
+                                  </h2>
+                                  <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                    <div class="accordion-body">
+                                        <p class="aboutTheDraw__accordion-text">С полными условиями розыгрыша можно ознакомиться <a class="aboutTheDraw__accordion-btn" href="#">здесь</a>.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--Нижний колонтитул страницы-->
     <footer class="footer">
@@ -139,7 +231,7 @@ $title = $text . ' ' . $city;
     <!--Style-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.min.css" rel="stylesheet">
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
