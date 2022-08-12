@@ -20,28 +20,39 @@ $title = $text . ' ' . $city;
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <?= $site_data['html'] ?>
     <title><?= $title ?></title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-
     <!--Шапка сайта-->
     <header class="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container">
-                    <h1 class="header__title">header</h1><!-- + h1-h6. -->
+                    <div class="header__box">
+                        <div class="header__top">
+                            <div class="header__package"><em>Отправь посылку</em></div>
+                            <div class="header__prize"><em>и выиграй приз</em></div>
+                            <div class="header__for-myself"><em>для себя и получателя</em></div>
+                        </div>
+                        <div class="header__bottom">
+                            <p class="header__descr">Для участия в розыгрыше укажите номер телефона:</p>
+                            <form class="mt-0">
+                                <div class="my-0 inline width">
+                                    <input class="form-control input--height" placeholder="+7" name="phone" type="text">
+                                    <div  style="font-weight:700;font-size:15px;color:red;padding-top:2px;display:none">......</div>
+                                </div>
+                                <div class="inline">
+                                    <input class="btn fw-bold mb-0 px-3 py-2 forms__button" type="submit" id="submit" value="Отправить">
+                                </div>
+                                <div  style="display:none">....</div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Навигационные ссылки -->
-        <nav class="header-nav">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 container">...</div>
-                </div>
-            </div>
-        </nav>
+
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main">
