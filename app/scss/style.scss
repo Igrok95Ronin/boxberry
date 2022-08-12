@@ -105,6 +105,11 @@ $primaryTextColor: #ed1651;
     height: 50px;
     padding: 0 15px;
     display: block;
+    transition: all .3s ease-in-out;
+    &:hover {
+        color: #fff;
+        background-color: #bf0e3d;
+    }
 }
 //Prizes
 .prizes__title {
@@ -280,4 +285,52 @@ $primaryTextColor: #ed1651;
 }
 .accordion-button {
     padding-left: 0;
+}
+//footer
+.footer {
+    background-image: url(../../assets/img/footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    line-height: 1.05;
+    font-weight: 700;
+    padding-top: 80px;
+}
+.footer__box {
+    height: 71.5vh;
+    max-height: 885px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__send {
+    font-size: 42px;
+    line-height: 1.55;
+    font-weight: 700;
+}
+.footer__win {
+    font-size: 64px;
+    line-height: 1.25;
+    font-weight: 700;
+    padding-left: 40px;
+}
+.footer__btn {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #7ec500;
+    background-position: center center;
+    max-width: 445px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    margin-top: 45px;
+    &:hover {
+        color: #fff;
+        background-color: #639905;
+    }
 }
