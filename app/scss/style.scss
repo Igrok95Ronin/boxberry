@@ -92,3 +92,87 @@ body{
     padding: 0 15px;
     display: block;
 }
+//Prizes
+.prizes__title {
+    font-size: 32px;
+    line-height: 1.55;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 90px;
+    span {
+        color: #ed1651;
+    }
+ }
+.prizes__box {
+    position: relative;
+    display: flex;
+}
+.prizes__item-phone {
+    display: flex;
+    align-items: center;
+}
+.prizes__phone-name {
+    font-size: 36px;
+    line-height: 1.55;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 200px;
+    transform: translateX(-15px);
+    span {
+        font-weight: 400;
+    }
+}
+.prizes__phone-descr {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 400;
+    transform: translateX(-13px);
+
+}
+.prizes__item-watch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 440px;
+    top: -30px;
+}
+.prizes__watch-name {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 700;
+    margin: 0;
+    span{
+        font-weight: 400;
+    }
+}
+
+.prizes__item-robot {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.prizes__robot-name {
+    transform: translateX(-100px);
+    padding-top: 10px;
+}
+
+.prizes__item-airpods {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    right: 170px;
+    bottom: 0;
+}
+.prizes__airpods-name {
+    padding-bottom: 40px;
+}
+.prizes__airpods-name,
+.prizes__robot-name {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 700;
+    margin: 0;
+    span{
+        font-weight: 400;
+    }
+}
